@@ -1,4 +1,6 @@
 
+from logging import getLogger
+
 def clockAngle(hour,minute):
     """
     clockAngle method to calculate the angle between hour and minute hand at a particular time.
@@ -37,5 +39,9 @@ def clockAngle(hour,minute):
     if angle2<angle:
         return angle2
     return angle
+
+log = getLogger()
+angle = clockAngle(1,50)
+log.info(angle)
 
 print(clockAngle(1,50))
