@@ -41,9 +41,10 @@ def clockAngle(hour,minute):
         return angle2
     return angle
 
-anngle = clockAngle(1,50)
+angle = clockAngle(1,50)
 
 logging.basicConfig(level=logging.DEBUG)
-logging.debug(anngle)
+logging.debug("clock angle:")
+logging.debug(angle)
 
-#print(clockAngle(1,50))
+print(clockAngle(1,50))
