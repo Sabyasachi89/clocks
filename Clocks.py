@@ -1,5 +1,6 @@
 
-from logging import getLogger
+import logging
+#from logging import getLogger
 
 def clockAngle(hour,minute):
     """
@@ -40,8 +41,9 @@ def clockAngle(hour,minute):
         return angle2
     return angle
 
-log = getLogger()
-angle = clockAngle(1,50)
-log.info(angle)
+anngle = clockAngle(1,50)
 
-print(clockAngle(1,50))
+logging.basicConfig(level=logging.DEBUG)
+logging.debug(anngle)
+
+#print(clockAngle(1,50))
